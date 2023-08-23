@@ -2,7 +2,7 @@ import { StyleSheet, Text, View, Dimensions } from "react-native";
 
 const { width, height } = Dimensions.get("window");
 export const COL = 5;
-export const MARGIN = 8;
+export const MARGIN = 5;
 export const SIZE = width / COL - MARGIN;
 
 type Props = {
@@ -22,8 +22,10 @@ export default Box;
 
 const styles = StyleSheet.create({
   container: {
-    width: SIZE,
-    height: SIZE,
+    width: SIZE - MARGIN,
+    height: SIZE - MARGIN,
+    margin: MARGIN,
+    borderRadius: 8,
     backgroundColor: "white",
     alignItems: "center",
     justifyContent: "center",

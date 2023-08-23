@@ -18,7 +18,7 @@ export default function App() {
         <StatusBar style="auto" />
         <View style={styles.wrapper}>
           {arr.map((item) => (
-            <Draggable key={item} positons={positions} id={item}>
+            <Draggable key={item} positions={positions} id={item}>
               <Box count={item} key={item} />
             </Draggable>
           ))}

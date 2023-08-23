@@ -7,3 +7,11 @@ export const getPostion = (index: number) => {
     y: Math.floor(index / COL) * SIZE,
   };
 };
+
+export const getIndex = (x: number, y: number) => {
+  "worklet";
+  const row = Math.round(y / SIZE);
+  const col = Math.round(x / SIZE);
+
+  return row * COL + col;
+};

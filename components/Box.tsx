@@ -1,6 +1,8 @@
 import { StyleSheet, Text, View, Dimensions } from "react-native";
 
 const { width, height } = Dimensions.get("window");
+
+// Define constants for the number of columns, margin, and size of each box
 export const COL = 5;
 export const MARGIN = 5;
 export const SIZE = width / COL - MARGIN;
@@ -10,6 +12,7 @@ type Props = {
 };
 
 const Box = ({ count }: Props) => {
+  // Set the background color based on whether the count is even or odd
   const backgroundColor = count % 2 === 0 ? "#157B84" : "#AE8DB9";
   return (
     <View style={[styles.container, { backgroundColor }]}>

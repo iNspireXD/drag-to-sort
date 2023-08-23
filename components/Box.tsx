@@ -1,9 +1,9 @@
 import { StyleSheet, Text, View, Dimensions } from "react-native";
 
 const { width, height } = Dimensions.get("window");
-const COL = 5;
-const MARGIN = 8;
-const SIZE = width / COL - MARGIN;
+export const COL = 5;
+export const MARGIN = 8;
+export const SIZE = width / COL - MARGIN;
 
 type Props = {
   count: number;
